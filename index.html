@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HEX Example Generator</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body id="bgcol">
+    <script src="script.js"></script>
+    <h1>HEX to RGB Converter</h1>
+    <h3>(With calculation)</h3>
+    <div class="form">
+        <p>Please enter your HEX Value here:</p>
+        <form>
+            <input type="text" id="HEX">
+            <button onclick="generateVal()" type="button">Generate!</button>
+        </form>
+        <p id="initialinput">#RRGGBB</p>
+        <p id="redcalc">Red:</p>
+        <p id="greencalc">Green:</p>
+        <p id="bluecalc">Blue:</p>
+        <!-- <p id="test"></p>
+        <p id="type"></p> -->
+        <p id="finalResult">RGB(Red, Green, Blue)</p>
+        <p id="previewtag">Colour preview</p>
+        <p id="colpreview"></p>
+    </div>
+</body>
+
+</html>
