@@ -201,9 +201,9 @@ function generateVal() {
     var totalGreen = greenValue1 * 16 + greenValue2;
     var totalBlue = blueValue1 * 16 + blueValue2;
     document.getElementById('finalResult').innerHTML = 'RGB(' + totalRed + ', ' + totalGreen + ', ' + totalBlue + ')';
-    document.getElementById('redcalc').innerHTML = 'Red = ' + redValue1 + ' &#10005 16 + ' + redValue2 + ' &#10005 1';
-    document.getElementById('greencalc').innerHTML = 'Green = ' + greenValue1 + ' &#10005 16 + ' + greenValue2 + ' &#10005 1';
-    document.getElementById('bluecalc').innerHTML = 'Blue = ' + blueValue1 + ' &#10005 16 + ' + blueValue2 + ' &#10005 1';
+    document.getElementById('redcalc').innerHTML = 'Red = (' + redValue1 + ' &#10005 16) + (' + redValue2 + ' &#10005 1)' + ' = ' + String(redValue1 * 16) + ' + ' + String(redValue2) + ' = ' + String(totalRed);
+    document.getElementById('greencalc').innerHTML = 'Green = (' + greenValue1 + ' &#10005 16) + (' + greenValue2 + ' &#10005 1)' + ' = ' + String(greenValue1 * 16) + ' + ' + String(greenValue2) + ' = ' + String(totalGreen);
+    document.getElementById('bluecalc').innerHTML = 'Blue = (' + blueValue1 + ' &#10005 16) + (' + blueValue2 + ' &#10005 1)' + ' = ' + String(blueValue1 * 16) + ' + ' + String(blueValue2) + ' = ' + String(totalBlue);
     document.getElementById('previewtag').innerHTML = 'Color Preview:';
     document.getElementById('colpreview').style.backgroundColor = 'RGB(' + totalRed + ', ' + totalGreen + ', ' + totalBlue + ')';
 }
